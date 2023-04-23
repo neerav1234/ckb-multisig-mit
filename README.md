@@ -44,3 +44,11 @@ We faced several challenges during the integration of our project. Thoroughly te
 # What's next for CKBSafe
 
 Adding more features and support to the Safe and making it production ready for use case. 
+
+# Rust Documentation 
+
+This file contains the multi-sig contract : https://github.com/neerav1234/ckb-multisig-mit/blob/main/contracts/ckb-safe/src/entry.rs
+
+The main() function performs several verification checks on a multi-signature lock script in the Nervos CKB blockchain. It verifies that the witness argument contains the correct number of signatures, that the lock arguments match the public keys of the signers, that the required number of signatures have been provided, and that the capacity has not been changed.
+
+The function returns an Ok value if all verification checks pass, and an error code (i8) if any check fails.
