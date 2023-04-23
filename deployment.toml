@@ -1,13 +1,13 @@
 [[cells]]
-name = "my-sudt"
+name = "ckb-safe"
 enable_type_id = false
-location = { file = "build/release/my-sudt" }
+location = { file = "build/release/ckb-safe" }
 
 # Dep group cells
 #[[dep_groups]]
 #name = "my_dep_group"
 #cells = [
-#  "my-sudt",
+#  "ckb-safe",
 #  "secp256k1_data"
 #]
 

@@ -6,13 +6,13 @@
 
 #![no_std]
 #![no_main]
-#![feature(lang_items)]
 #![feature(alloc_error_handler)]
+#![feature(lang_items)]
 #![feature(panic_info_message)]
-
 // define modules
 mod entry;
 mod error;
+mod try1;
 
 use ckb_std::default_alloc;
 
@@ -22,7 +22,7 @@ default_alloc!();
 /// program entry
 fn program_entry() -> i8 {
     // Call main function and return error code
-    match entry::main() {
+    match try1::main() {
         Ok(_) => 0,
         Err(err) => err as i8,
     }

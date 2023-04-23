@@ -1,1 +1,1 @@
-{"cell_recipes":[{"name":"my-sudt","tx_hash":"0x64f0feefc803cff81ef180f3070160ce9e005e729543e12ff0e9e835a2842935","index":0,"occupied_capacity":2626100000000,"data_hash":"0xf5850b8f4c3dc4419da7721d6eadafc7f601fbffcdb1a85b297bb70c7f03ddb4","type_id":null}],"dep_group_recipes":[]}
+{"cell_recipes":[{"name":"ckb-safe","tx_hash":"0x64f0feefc803cff81ef180f3070160ce9e005e729543e12ff0e9e835a2842935","index":0,"occupied_capacity":2626100000000,"data_hash":"0xf5850b8f4c3dc4419da7721d6eadafc7f601fbffcdb1a85b297bb70c7f03ddb4","type_id":null}],"dep_group_recipes":[]}

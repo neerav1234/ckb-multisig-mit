@@ -11,20 +11,23 @@ use ckb_std::{
     },
 };
 use core::result::Result;
+use alloc::{vec, vec::Vec};
+use secp256k1::{Secp256k1, SecretKey, PublicKey};
+// use secp256k1::{Secp256k1, SecretKey, PublicKey};
 
 const N: usize = 2; // Number of required signatures
 const PUBKEYS: [&str; 2] = ["public_key_1", "public_key_2"]; // List of public keys for signers
 
-fn main() -> Result<(), i8> {
+pub fn main() -> Result<(), i8> {
     let mut sig_count = 0;
-    let mut used_keys = vec![];
+    // let mut used_keys = vec![];
 
     // Verify that the script code hash is correct
-    let script_hash = load_script_hash()?;
-    let expected_code_hash: [u8; 32] = [2u8; 32];
-    if script_hash.as_slice() != expected_code_hash.as_ref() {
-        return Err(-1);
-    }
+    // let script_hash = load_script_hash()?;
+    // let expected_code_hash: [u8; 32] = [2u8; 32];
+    // if script_hash.as_slice() != expected_code_hash.as_ref() {
+    //     return Err(-1);
+    // }
 
     // Verify that the witness argument contains the correct number of signatures
     let witness_args = load_witness_args(0, Source::GroupInput)?;
@@ -46,7 +49,7 @@ fn main() -> Result<(), i8> {
             .to_vec();
         let mut pubkey_bytes = [0u8; 65];
         pubkey_bytes.copy_from_slice(&witness_bytes[..]);
-        let pubkey = secp256k1::PublicKey::from_slice(&pubkey_bytes)?;
+        let pubkey = tiny_secp256k1::PublicKey::from_slice(&pubkey_bytes)?;
         let lock_hash = load_cell_lock_hash(i, Source::GroupInput)?;
         if lock_hash.as_slice() != pubkey.serialize_uncompressed()[1..].as_ref() {
             return Err(-4);

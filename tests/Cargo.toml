@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 ckb-testtool = "0.9"
+ckb-types = "0.109.0"
+ckb-std = "0.12.1"

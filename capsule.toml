@@ -11,5 +11,5 @@ version = "0.9.1"
 deployment = "deployment.toml"
 
 [[contracts]]
-name = "my-sudt"
+name = "ckb-safe"
 template_type = "Rust"

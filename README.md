@@ -1,4 +1,4 @@
-# my-sudt
+# ckb-safe
 
 Build contracts:
 

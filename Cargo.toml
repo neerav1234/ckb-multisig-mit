@@ -1,5 +1,5 @@
 [workspace]
-members = ["tests", "contracts/my-sudt"]
+members = ["tests", "contracts/ckb-safe"]
 
 [profile.release]
 overflow-checks = true
