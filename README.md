@@ -31,7 +31,7 @@ We also learned that Sia stores data on a global, peer-to-peer network, distribu
 
 By exploring and understanding Sia's capabilities during the development of the project, we gained valuable insights into how decentralized storage can contribute to improved security, privacy, and resilience for our multi-signature dApp.
 
-# Challenges faced
+# Challenges we faced
 
 During the development of CKBSafe, we faced several challenges, including limited resources and unfamiliarity with Rust. The Nervos CKB blockchain's architecture, being significantly different from the Ethereum ecosystem, posed a steep learning curve. 
 
@@ -41,3 +41,6 @@ Additionally, our initial failure to discover comprehensive documentation and re
 
 We faced several challenges during the integration of our project. Thoroughly testing and debugging the frontend and smart contract interactions on the CKB network was time-consuming, as we had to account for various edge cases and potential issues that could arise during transactions.
 
+# What's next for CKBSafe
+
+Adding more features and support to the Safe and making it production ready for use case. 
